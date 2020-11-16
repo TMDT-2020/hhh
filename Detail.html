@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Detail.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>  
+    <script src="./js/Home.js"></script>
+    <title>Detail</title>
+    <script src="https://kit.fontawesome.com/9f6f80da6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar" >
+            <div id="myNav" class="nav-menu-left">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#">Home</a>
+                  <a href="#">Danh Mục</a>
+                  <a href="#">Hỗ Trợ</a>
+                  <a href="#">Liên Hệ</a>
+                </div>
+              </div>
+            <span class="nav-icon" onclick="openNav()">&#9776;</span>
+            <div class="nav-logo">
+                <i><img src="./img/1x/Logo.png" style="width: 70px; height: auto;" alt=""></i>
+            </div>
+            <div class="nav-menu-right">
+                <ul>
+                    <li>
+                        <form action="" class="search-box">
+                            <input type="search" placeholder="Search">
+                            <span class="search-button" type="search" name="search">
+                                <i class="fas fa-search" style="color: #FF6161;"></i>
+                            </span>
+                        </form>
+                    </li>
+                    <li>
+                        <i class="fas fa-user-alt" style="color: #FF6161;"></i>
+                    </li>
+                    <li id="nav-cart">
+                        <button>
+                            <span style="color: white;">0</span>
+                            <i class="fas fa-shopping-cart" style="color: white;"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="News">
+            <div class="new">
+                <span>Tin tức</span>
+            </div>
+            <marquee scrollamount="10">
+                <a class="text-info" >
+                    <b style="margin-left: 80px">
+                        Tin Mới Nhất :Tổng bí thư: 'Chú ý xử lý những vấn đề gây bức xúc trong nhân dân' 
+                    </b>
+                </a>
+                <a class="text-info" >
+                    <b style="margin-left: 80px">
+                        Tin Mới Nhất :Tổng bí thư: 'Chú ý xử lý những vấn đề gây bức xúc trong nhân dân' 
+                    </b>
+                </a><a class="text-info" >
+                    <b style="margin-left: 80px">
+                        Tin Mới Nhất :Tổng bí thư: 'Chú ý xử lý những vấn đề gây bức xúc trong nhân dân' 
+                    </b>
+                </a>
+            </marquee>    
+        </div>
+        <div class="infor-product">
+            <div class="infor-1 infor">
+                <img src="./img/1x/img-1.png" alt="">
+            </div>
+            <div class="infor-2 infor">
+                <h2>THOÁT KHỎI BẪY CẢM XÚC</h2><br>
+                <span>Tác giả : MMH</span><br>
+                <span>Danh mục : <a href="#">Thiêú nhi</a></span>
+                <div class="stars">
+                    <form action="">
+                      <input class="star star-5" id="star-5" type="radio" name="star"/>
+                      <label class="star star-5" for="star-5"></label>
+                      <input class="star star-4" id="star-4" type="radio" name="star"/>
+                      <label class="star star-4" for="star-4"></label>
+                      <input class="star star-3" id="star-3" type="radio" name="star"/>
+                      <label class="star star-3" for="star-3"></label>
+                      <input class="star star-2" id="star-2" type="radio" name="star"/>
+                      <label class="star star-2" for="star-2"></label>
+                      <input class="star star-1" id="star-1" type="radio" name="star"/>
+                      <label class="star star-1" for="star-1"></label>
+                    </form>
+                </div><br>
+                <span>số lượng &nbsp; 
+                    <div class="buttons_added">
+                        <input class="minus is-form" type="button" value="-">
+                        <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">                        
+                        <input class="plus is-form" type="button" value="+">
+                    </div>
+                    <script>//<![CDATA[
+                        $('input.input-qty').each(function() {
+                          var $this = $(this),
+                            qty = $this.parent().find('.is-form'),
+                            min = Number($this.attr('min')),
+                            max = Number($this.attr('max'))
+                          if (min == 0) {
+                            var d = 0
+                          } else d = min
+                          $(qty).on('click', function() {
+                            if ($(this).hasClass('minus')) {
+                              if (d > min) d += -1
+                            } else if ($(this).hasClass('plus')) {
+                              var x = Number($this.val()) + 1
+                              if (x <= max) d += 1
+                            }
+                            $this.attr('value', d).val(d)
+                          })
+                        })
+                        //]]></script>
+                </span><br>
+                <span style="color: red; font-size: 20px;"><b>50.000đ</b></span><br>
+                <button>Đặt ngay</button>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="infor-3 infor">
+                <h2>ƯU ĐÃI LIÊN QUAN</h2>
+                <a href="#">freeship đơn 10.000</a><br>
+                <a href="#">freeship đơn 10.000</a><br>
+                <a href="#">freeship đơn 10.000</a><br>
+                <a href="#">freeship đơn 10.000</a><br>
+            </div>
+        </div>
+        <div class="product-description">
+            <div class="product-detail">
+                <h2>Thông tin sản phẩm</h2>
+                <div class="name-detail">
+                    <a>Mã sách</a><br>
+                    <a>Tên sách</a><br>
+                    <a>Tác giả</a><br>
+                    <a>NXB</a><br>
+                    <a>Kích thước</a><br>
+                    <a>Số trang</a><br>
+                </div>
+                <div class="detail">
+                    <a>001</a><br>
+                    <a>Thoát khỏi bẫy cảm xúc chua đô mibnh</a><br>
+                    <a>Minh Hòa</a><br>
+                    <a>TP HCM</a><br>
+                    <a>10*20</a><br>
+                    <a>213</a><br>
+
+                </div>
+            </div>
+            <div class="description">
+                <h2>Mô tả sản phẩm</h2>
+                <span>
+                    A thoughtful, captivating and ultimately uplifting novel from this uniquely talented author
+
+Christine Rose is crossing the Ha’penny Bridge in Dublin late one night when she sees a stranger, Adam, poised to jump. Desperate to help, she talks him into a reckless deal: if he gives her two weeks – till his 35th birthday – she’ll prove that life is worth living.
+
+But as the clock ticks and the two of them embark on late-night escapades and romantic adventures, what Christine has really promised seems impossible…
+
+A novel to make you laugh, cry and appreciate life, this is Cecelia Ahern at her thoughtful and surprising best.
+                </span>
+            </div>
+        </div>
+        <div class="related-products">
+            <div class="item-product">
+                <div class="item-product-overlay">
+                    <img src="./img/1x/img-1.png" alt="Owl Image">
+                    <a class="overlay">Mua ngay</a>    
+                </div>
+                <div class="sub-product">
+                    <i class="fas fa-star"></i>
+                    <h3>Thoát khỏi bẫy cảm xúc</h3>
+                    <span><p class="p1">88.000đ</p><p class="p2">88.000đ</p></span>
+                </div>
+            </div>
+            <div class="item-product">
+                <div class="item-product-overlay">
+                    <img src="./img/1x/img-1.png" alt="Owl Image">
+                    <a class="overlay">Mua ngay</a>    
+                </div>
+                <div class="sub-product">
+                    <i class="fas fa-star"></i>
+                    <h3>Thoát khỏi bẫy cảm xúc</h3>
+                    <span><p class="p1">88.000đ</p><p class="p2">88.000đ</p></span>
+                </div>
+            </div>
+            <div class="item-product">
+                <div class="item-product-overlay">
+                    <img src="./img/1x/img-1.png" alt="Owl Image">
+                    <a class="overlay">Mua ngay</a>    
+                </div>
+                <div class="sub-product">
+                    <i class="fas fa-star"></i>
+                    <h3>Thoát khỏi bẫy cảm xúc</h3>
+                    <span><p class="p1">88.000đ</p><p class="p2">88.000đ</p></span>
+                </div>
+            </div>
+            <div class="item-product">
+                <div class="item-product-overlay">
+                    <img src="./img/1x/img-1.png" alt="Owl Image">
+                    <a class="overlay">Mua ngay</a>    
+                </div>
+                <div class="sub-product">
+                    <i class="fas fa-star"></i>
+                    <h3>Thoát khỏi bẫy cảm xúc </h3>
+                    <span><p class="p1">88.000đ</p><p class="p2">88.000đ</p></span>
+                </div>
+            </div>
+            <div class="item-product">
+                <div class="item-product-overlay">
+                    <img src="./img/1x/img-1.png" alt="Owl Image">
+                    <a class="overlay">Mua ngay</a>    
+                </div>
+                <div class="sub-product">
+                    <i class="fas fa-star"></i>
+                    <h3>Thoát khỏi bẫy cảm xúc</h3>
+                    <span><p class="p1">88.000đ</p><p class="p2">88.000đ</p></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr id="hr">
+    <footer>
+        <div class="footer-icon">
+            <div class="f-icon-left">
+                <img src="./img/1x/Logo.png" alt="">
+            </div>
+            <div class="f-icon-center"> 
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="f-icon-right">
+                <i class="fab fa-paypal"><span>PAYPAL</span></i>
+                <i class="fas fa-truck"><span>COD</span></i>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <div class="contact">
+                <i class="fas fa-envelope"></i>
+                <h3>MAIL</h3>
+                <span>bstore@gmail.com</span>
+            </div>
+            <div class="contact">
+                <i class="fas fa-headset"></i>
+                <h3>CALL</h3>
+                <span>1900.000</span>
+            </div>
+            <div class="contact">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>FIND US</h3>
+                <span>SU VAN HANH, HCM</span>
+            </div>
+        </div>
+        <hr id="hr">
+        <h3 id="f-bottom">COPPYRIGHT@2020</h3>
+    </footer>
+
+</body>
+</html>

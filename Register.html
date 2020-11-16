@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Register.css">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+<body>
+    <div class="back">
+        <i class="fas fa-backspace"></i>
+    </div>
+    <main>
+        <div class="Register">
+            <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+            <div class="container">
+                <input type="text" placeholder="Họ" required>
+                <input type="text" placeholder="Tên" required>
+                <input type="text" placeholder="Ngày sinh" required>
+                <input type="text" placeholder="Địa chỉ" required>
+                <input type="text" placeholder="Số điện thoại" required>
+                <input type="text" placeholder="Email" required>
+                <input type="password" class="form-control" id="ipnPassword1" placeholder="Mật khẩu">
+                <button class="btn btn-outline-secondary1" type="button" id="btnPassword1">
+                    <span class="fas fa-eye"></span>
+                </button>
+                <input type="password" class="form-control" id="ipnPassword" placeholder="Nhập lại mật khẩu">
+                <button class="btn btn-outline-secondary2" type="button" id="btnPassword">
+                    <span class="fas fa-eye"></span>
+                </button>
+                <script>
+                    let showPassword = false
+                    const ipnElement = document.querySelector('#ipnPassword1')
+                    const btnElement = document.querySelector('#btnPassword1')
+                    btnElement.addEventListener('click', togglePassword)
+                    function togglePassword() {
+                        if (showPassword) {
+                            ipnElement.setAttribute('type', 'password')
+                            showPassword = false
+                        } else {
+                        ipnElement.setAttribute('type', 'text')
+                        showPassword = true
+                        }
+                    }
+                </script>
+                <script>
+                    let showPassword2 = false
+                    const ipnElement2 = document.querySelector('#ipnPassword')
+                    const btnElement2 = document.querySelector('#btnPassword')
+                    btnElement2.addEventListener('click', togglePassword)
+                    function togglePassword() {
+                        if (showPassword2) {
+                            ipnElement2.setAttribute('type', 'password')
+                            showPassword2 = false
+                        } else {
+                        ipnElement2.setAttribute('type', 'text')
+                        showPassword2 = true
+                        }
+                    }
+                </script>
+                <button class="btnlogin" type="submit">Đăng ký</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
